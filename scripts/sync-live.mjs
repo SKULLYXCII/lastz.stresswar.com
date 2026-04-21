@@ -89,7 +89,7 @@ function discoverLocalDataFiles(dir) {
     }
     if (name.endsWith(".data")) {
       const rel = relative(root, full).split(sep).join("/");
-      if (rel === ".data") continue;
+      if (rel === ".data" || rel === "_root.data") continue;
       dataPaths.add(`/${rel}`);
     }
   }
@@ -115,6 +115,7 @@ async function sync() {
     }
   }
 
+  ensureRootDataAlias();
   saveState();
   printSummary();
 
@@ -254,6 +255,18 @@ function writeFileIfChanged(file, content) {
     writeFileSync(file, bytes);
   }
   return true;
+}
+
+function ensureRootDataAlias() {
+  const homeData = join(root, ".data");
+  if (!existsSync(homeData)) return;
+
+  if (writeFileIfChanged(join(root, "_root.data"), readFileSync(homeData))) {
+    summary.written += 1;
+    console.log(`${dryRun ? "would write" : "wrote"} _root.data`);
+  } else {
+    summary.unchanged += 1;
+  }
 }
 
 function normalizeHtml(html, routePath, targetFile) {
