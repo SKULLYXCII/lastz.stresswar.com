@@ -1,10 +1,12 @@
 {
-  "name": "lastz-stresswar-static",
+  "name": "lastz-slightlyfunctional-static",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "serve": "node scripts/serve-static.mjs",
-    "start": "node scripts/serve-static.mjs"
+    "start": "node scripts/serve-static.mjs",
+    "sync:live": "node scripts/sync-live.mjs",
+    "sync:live:dry": "node scripts/sync-live.mjs --dry-run"
   }
 }
