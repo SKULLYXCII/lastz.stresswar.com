@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "files": {
+    "_root.data": {
+      "localSha256": "adf41aa8c88b2ab86938dbc7c666ec94fd4dce383c4e955a08dc638bd63fe763",
+      "remoteSha256": "adf41aa8c88b2ab86938dbc7c666ec94fd4dce383c4e955a08dc638bd63fe763",
+      "sourceUrl": "https://lastz.stresswar.com/.data"
+    },
+    "404.html": {
+      "localSha256": "194595f958416f16c252374ef9272bca249e44b5c93afc624602cb0f14019911",
+      "remoteSha256": "c1e49bdd67dd4d2a4909939717b5a530384718110238d27c4df4e946e374b96c",
+      "sourceUrl": "https://lastz.stresswar.com/"
+    },
+    "calculators.html": {
+      "localSha256": "18203cd081a83a5ea3119acbaa6184058a05c63aa2d0ee6b5a53a5f5ae853793",
+      "remoteSha256": "66c6345f419a8669f362611cd57de1fde73a80c7bec6cd80216f85ab70ce6a95",
+      "sourceUrl": "https://lastz.stresswar.com/calculators"
+    },
+    "calculators/index.html": {
+      "localSha256": "18203cd081a83a5ea3119acbaa6184058a05c63aa2d0ee6b5a53a5f5ae853793",
+      "remoteSha256": "66c6345f419a8669f362611cd57de1fde73a80c7bec6cd80216f85ab70ce6a95",
+      "sourceUrl": "https://lastz.stresswar.com/calculators"
+    },
+    "feedback.data": {
+      "localSha256": "bb2ed2b52e465e328682870a7a9baeb12b3bcc3af96e02a4b8721f09358ec7f3",
+      "remoteSha256": "bb2ed2b52e465e328682870a7a9baeb12b3bcc3af96e02a4b8721f09358ec7f3",
+      "sourceUrl": "https://lastz.stresswar.com/feedback.data"
+    },
+    "feedback.html": {
+      "localSha256": "e8a421c7ef876bea190c9aab420bacefabdf4e17c82f14a767cab4357e0e3368",
+      "remoteSha256": "2a84b4664f89d7c7da3b9ad23ad3761291ec8acaeecc0d04e18537f15c81f714",
+      "sourceUrl": "https://lastz.stresswar.com/feedback"
+    },
+    "feedback/index.html": {
+      "localSha256": "e8a421c7ef876bea190c9aab420bacefabdf4e17c82f14a767cab4357e0e3368",
+      "remoteSha256": "2a84b4664f89d7c7da3b9ad23ad3761291ec8acaeecc0d04e18537f15c81f714",
+      "sourceUrl": "https://lastz.stresswar.com/feedback"
+    },
+    "heroes.html": {
+      "localSha256": "c3a748b6c153c4ab7e11dfd4262413dc45630fc890136c26bf1fefb671bb44a1",
+      "remoteSha256": "87a9dced493ede15672f3d5198220a634ab7f483638e6faa390ea5c37183f21a",
+      "sourceUrl": "https://lastz.stresswar.com/heroes"
+    },
+    "heroes/index.html": {
+      "localSha256": "c3a748b6c153c4ab7e11dfd4262413dc45630fc890136c26bf1fefb671bb44a1",
+      "remoteSha256": "87a9dced493ede15672f3d5198220a634ab7f483638e6faa390ea5c37183f21a",
+      "sourceUrl": "https://lastz.stresswar.com/heroes"
+    },
+    "hq.html": {
+      "localSha256": "8b21230cdd1bf3df7e5cabad6f0a3bab9056f0414eab0a3b399b21e570cf43e0",
+      "remoteSha256": "28aa555e2d7c0eb8f8626331dffe90f1bc23137c83b7f571686ea6287cd4a907",
+      "sourceUrl": "https://lastz.stresswar.com/hq"
+    },
+    "hq/index.html": {
+      "localSha256": "8b21230cdd1bf3df7e5cabad6f0a3bab9056f0414eab0a3b399b21e570cf43e0",
+      "remoteSha256": "28aa555e2d7c0eb8f8626331dffe90f1bc23137c83b7f571686ea6287cd4a907",
+      "sourceUrl": "https://lastz.stresswar.com/hq"
+    },
+    "index.html": {
+      "localSha256": "194595f958416f16c252374ef9272bca249e44b5c93afc624602cb0f14019911",
+      "remoteSha256": "c1e49bdd67dd4d2a4909939717b5a530384718110238d27c4df4e946e374b96c",
+      "sourceUrl": "https://lastz.stresswar.com/"
+    },
+    "research.data": {
+      "localSha256": "5e8bba2b0eb0c70faf51167fb87e72292ad97d2ff8ec508efabd23a0af8e1c3c",
+      "remoteSha256": "5e8bba2b0eb0c70faf51167fb87e72292ad97d2ff8ec508efabd23a0af8e1c3c",
+      "sourceUrl": "https://lastz.stresswar.com/research.data"
+    },
+    "research.html": {
+      "localSha256": "96f63789b215cd2363fe585f7eabf61994c91fd99925e2491adf835a8756938c",
+      "remoteSha256": "02f3b64aebe3c6a8ffd3cec9defdfcd64ae57a5e588a0612ce0052a3eef4b543",
+      "sourceUrl": "https://lastz.stresswar.com/research"
+    },
+    "research/alliance-recognition.data": {
+      "localSha256": "a134462b6702b28f3a001e798d5b20ffceac19b5e6dc723da920b7b7ea3d04e2",
+      "remoteSha256": "a134462b6702b28f3a001e798d5b20ffceac19b5e6dc723da920b7b7ea3d04e2",
+      "sourceUrl": "https://lastz.stresswar.com/research/alliance-recognition.data"
+    },
+    "research/alliance-recognition.html": {
+      "localSha256": "5a27d6ff5ddcdbba441e79ef825da52ad9072aca555ad22d2a9c00c9d6784864",
+      "remoteSha256": "00177ec2b100348b79068bb2b7a5e507da5cfc6e54823431a7062996d8469b49",
+      "sourceUrl": "https://lastz.stresswar.com/research/alliance-recognition"
+    },
+    "research/alliance-recognition/index.html": {
+      "localSha256": "5a27d6ff5ddcdbba441e79ef825da52ad9072aca555ad22d2a9c00c9d6784864",
+      "remoteSha256": "00177ec2b100348b79068bb2b7a5e507da5cfc6e54823431a7062996d8469b49",
+      "sourceUrl": "https://lastz.stresswar.com/research/alliance-recognition"
+    },
+    "research/army-building.data": {
+      "localSha256": "711598de7142ab3824742d54cc3015fae9578e03b13583dd59e9d500fd578c0a",
+      "remoteSha256": "711598de7142ab3824742d54cc3015fae9578e03b13583dd59e9d500fd578c0a",
+      "sourceUrl": "https://lastz.stresswar.com/research/army-building.data"
+    },
+    "research/army-building.html": {
+      "localSha256": "1367d2a245035812dd040b14e0550aaaf06e092aeb0177f07a33ae17a24bdd8a",
+      "remoteSha256": "1bc15eab96b2f9b6a7beee345f6a62c9244ab60bbd5cdd07179ca71c1cd508d1",
+      "sourceUrl": "https://lastz.stresswar.com/research/army-building"
+    },
+    "research/army-building/index.html": {
+      "localSha256": "1367d2a245035812dd040b14e0550aaaf06e092aeb0177f07a33ae17a24bdd8a",
+      "remoteSha256": "1bc15eab96b2f9b6a7beee345f6a62c9244ab60bbd5cdd07179ca71c1cd508d1",
+      "sourceUrl": "https://lastz.stresswar.com/research/army-building"
+    },
+    "research/field.data": {
+      "localSha256": "0f56957bc097a1af3b06ed2f5add6182702b7e29baee3e0237eb59ec47711616",
+      "remoteSha256": "0f56957bc097a1af3b06ed2f5add6182702b7e29baee3e0237eb59ec47711616",
+      "sourceUrl": "https://lastz.stresswar.com/research/field.data"
+    },
+    "research/field.html": {
+      "localSha256": "1f523a5d537f712853fa36b7d9d722aafce01a88b7f34ea4ebc770ad3bf3753d",
+      "remoteSha256": "e4071b50b34d4a469219b3f265dd3281e5e781d7029753349a77bd1422e0e581",
+      "sourceUrl": "https://lastz.stresswar.com/research/field"
+    },
+    "research/field/index.html": {
+      "localSha256": "1f523a5d537f712853fa36b7d9d722aafce01a88b7f34ea4ebc770ad3bf3753d",
+      "remoteSha256": "e4071b50b34d4a469219b3f265dd3281e5e781d7029753349a77bd1422e0e581",
+      "sourceUrl": "https://lastz.stresswar.com/research/field"
+    },
+    "research/fully-armed-alliance.data": {
+      "localSha256": "55a6059c34fb8fdcc8cb5ff2a66d470219fcafe502384fd103daebf690d00c11",
+      "remoteSha256": "55a6059c34fb8fdcc8cb5ff2a66d470219fcafe502384fd103daebf690d00c11",
+      "sourceUrl": "https://lastz.stresswar.com/research/fully-armed-alliance.data"
+    },
+    "research/fully-armed-alliance.html": {
+      "localSha256": "fb2bb82cd4b9faeb6823cdeba0e9d2d6a22d43dcfb70538d9e86a1964aa70da9",
+      "remoteSha256": "d59535cb441f6e945717a884b522967e4189dcf1f6d6a8941b9750e3bbc2606d",
+      "sourceUrl": "https://lastz.stresswar.com/research/fully-armed-alliance"
+    },
+    "research/fully-armed-alliance/index.html": {
+      "localSha256": "fb2bb82cd4b9faeb6823cdeba0e9d2d6a22d43dcfb70538d9e86a1964aa70da9",
+      "remoteSha256": "d59535cb441f6e945717a884b522967e4189dcf1f6d6a8941b9750e3bbc2606d",
+      "sourceUrl": "https://lastz.stresswar.com/research/fully-armed-alliance"
+    },
+    "research/hero-training.data": {
+      "localSha256": "7d8c99c3fbdfbca5e200337c5c8ad2ae376a194929d9721cd72ea842fb65451c",
+      "remoteSha256": "7d8c99c3fbdfbca5e200337c5c8ad2ae376a194929d9721cd72ea842fb65451c",
+      "sourceUrl": "https://lastz.stresswar.com/research/hero-training.data"
+    },
+    "research/hero-training.html": {
+      "localSha256": "96f3bd7dd3367041d4fe1eb51b70fd76ade57e0594f48538d3297f4a3ccfd494",
+      "remoteSha256": "2e5837b03dabbaeb16c4ef91e71fe99c90e55bde581c5f324555ba18ae7512e9",
+      "sourceUrl": "https://lastz.stresswar.com/research/hero-training"
+    },
+    "research/hero-training/index.html": {
+      "localSha256": "96f3bd7dd3367041d4fe1eb51b70fd76ade57e0594f48538d3297f4a3ccfd494",
+      "remoteSha256": "2e5837b03dabbaeb16c4ef91e71fe99c90e55bde581c5f324555ba18ae7512e9",
+      "sourceUrl": "https://lastz.stresswar.com/research/hero-training"
+    },
+    "research/index.html": {
+      "localSha256": "96f63789b215cd2363fe585f7eabf61994c91fd99925e2491adf835a8756938c",
+      "remoteSha256": "02f3b64aebe3c6a8ffd3cec9defdfcd64ae57a5e588a0612ce0052a3eef4b543",
+      "sourceUrl": "https://lastz.stresswar.com/research"
+    },
+    "research/military-strategies.data": {
+      "localSha256": "5f2f03c97eecd64231ad0ef70c279349aa712ff669e1224e95965fd0ce9c4142",
+      "remoteSha256": "5f2f03c97eecd64231ad0ef70c279349aa712ff669e1224e95965fd0ce9c4142",
+      "sourceUrl": "https://lastz.stresswar.com/research/military-strategies.data"
+    },
+    "research/military-strategies.html": {
+      "localSha256": "3351661969f28725546131b8ae7794f57897f802390daa0ecdab8120bec76a0d",
+      "remoteSha256": "a40fef26a5d883b8e443adfc1dbfbb6ab8e57a1fc98beda8a4ce7e25e9dcfa9d",
+      "sourceUrl": "https://lastz.stresswar.com/research/military-strategies"
+    },
+    "research/military-strategies/index.html": {
+      "localSha256": "3351661969f28725546131b8ae7794f57897f802390daa0ecdab8120bec76a0d",
+      "remoteSha256": "a40fef26a5d883b8e443adfc1dbfbb6ab8e57a1fc98beda8a4ce7e25e9dcfa9d",
+      "sourceUrl": "https://lastz.stresswar.com/research/military-strategies"
+    },
+    "research/peace-shield.data": {
+      "localSha256": "0d0125058fad65d18e4d144e1f2ce7af17c484ab6c54ff9653133631c62604b1",
+      "remoteSha256": "0d0125058fad65d18e4d144e1f2ce7af17c484ab6c54ff9653133631c62604b1",
+      "sourceUrl": "https://lastz.stresswar.com/research/peace-shield.data"
+    },
+    "research/peace-shield.html": {
+      "localSha256": "63cefb411c4718715b530980b138e1dfcea4062c2c8441d1bb9ac0d46cb1fc92",
+      "remoteSha256": "4b4c2e9188caae511663aa6a3361714e77e6cbd9145f55ff01c800a71b14d339",
+      "sourceUrl": "https://lastz.stresswar.com/research/peace-shield"
+    },
+    "research/peace-shield/index.html": {
+      "localSha256": "63cefb411c4718715b530980b138e1dfcea4062c2c8441d1bb9ac0d46cb1fc92",
+      "remoteSha256": "4b4c2e9188caae511663aa6a3361714e77e6cbd9145f55ff01c800a71b14d339",
+      "sourceUrl": "https://lastz.stresswar.com/research/peace-shield"
+    },
+    "research/siege-to-seize.data": {
+      "localSha256": "b9e237d6bb47c54d8207219eddab7ffd90ad54bec6b2ba291fe71b9df7cd9d05",
+      "remoteSha256": "b9e237d6bb47c54d8207219eddab7ffd90ad54bec6b2ba291fe71b9df7cd9d05",
+      "sourceUrl": "https://lastz.stresswar.com/research/siege-to-seize.data"
+    },
+    "research/siege-to-seize.html": {
+      "localSha256": "84434454531fce0b19dcadeb6a603750afa89e3ead1a62514ca8ff5f252da19b",
+      "remoteSha256": "c8f3f106df4b9238e5a9f17b0e34d3d285901f4d2fd93d210bfc9b16560d4214",
+      "sourceUrl": "https://lastz.stresswar.com/research/siege-to-seize"
+    },
+    "research/siege-to-seize/index.html": {
+      "localSha256": "84434454531fce0b19dcadeb6a603750afa89e3ead1a62514ca8ff5f252da19b",
+      "remoteSha256": "c8f3f106df4b9238e5a9f17b0e34d3d285901f4d2fd93d210bfc9b16560d4214",
+      "sourceUrl": "https://lastz.stresswar.com/research/siege-to-seize"
+    },
+    "research/unit-special-training.data": {
+      "localSha256": "88ba3e2908212a521ff076bb4d68c04ef63188b157b01066c77f69e2c7ae3a1f",
+      "remoteSha256": "88ba3e2908212a521ff076bb4d68c04ef63188b157b01066c77f69e2c7ae3a1f",
+      "sourceUrl": "https://lastz.stresswar.com/research/unit-special-training.data"
+    },
+    "research/unit-special-training.html": {
+      "localSha256": "cff66544b1b4fd3536a9985bf1514cc2cef43f216adfabe4a70b354e30887660",
+      "remoteSha256": "1c862b41b80a6f67fb9fdb9cd6b34573ae38ba22def829ee9432ddd7977afe58",
+      "sourceUrl": "https://lastz.stresswar.com/research/unit-special-training"
+    },
+    "research/unit-special-training/index.html": {
+      "localSha256": "cff66544b1b4fd3536a9985bf1514cc2cef43f216adfabe4a70b354e30887660",
+      "remoteSha256": "1c862b41b80a6f67fb9fdb9cd6b34573ae38ba22def829ee9432ddd7977afe58",
+      "sourceUrl": "https://lastz.stresswar.com/research/unit-special-training"
+    },
+    "tank.data": {
+      "localSha256": "9bfa96d5a2424cdd69984e91d8bce8402dd76844269b6ee956c572a0e1d7883c",
+      "remoteSha256": "9bfa96d5a2424cdd69984e91d8bce8402dd76844269b6ee956c572a0e1d7883c",
+      "sourceUrl": "https://lastz.stresswar.com/tank.data"
+    },
+    "tank.html": {
+      "localSha256": "9a620de41ec8c0e1ed3a8559b988c7342054511fccf608684cb39e842a16cd9a",
+      "remoteSha256": "539de70cd825a449753111b950096c0b2b91f15feab6ba171efd6fee6f479a97",
+      "sourceUrl": "https://lastz.stresswar.com/tank"
+    },
+    "tank/index.html": {
+      "localSha256": "9a620de41ec8c0e1ed3a8559b988c7342054511fccf608684cb39e842a16cd9a",
+      "remoteSha256": "539de70cd825a449753111b950096c0b2b91f15feab6ba171efd6fee6f479a97",
+      "sourceUrl": "https://lastz.stresswar.com/tank"
+    }
+  }
+}

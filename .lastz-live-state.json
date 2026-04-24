@@ -7,7 +7,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "6a3dd69e2a626d1ce1cfc70ca5cc1304a42fafb03f8d57736acf663383955338",
+      "sha256": "6dcbce2b8f3c0d195d7036247b86a2d853e28a4224226a56eea2445ead4a5dc2",
       "bytes": 15366
     },
     "https://lastz.stresswar.com/android-chrome-192x192.png": {
@@ -255,7 +255,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "c084e489feb87cacb13e44c1d5f312fa426fa5f4cdc27df28e6935deba00c633",
+      "sha256": "e2436d5529a0433995c1ea03f27973478cd42501e388dec4cdcc1cdb06e01351",
       "bytes": 10632
     },
     "https://lastz.stresswar.com/favicon-16x16.png": {
@@ -287,7 +287,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "395039d2ccb452f0d6c79a60d32882eea7faf6ea94bb787174d472a5ac8e2fa0",
+      "sha256": "bdd65b8c9277b0ab8dea57dcace2c59ec12d8922bfa8da37c71a4364671e0aa0",
       "bytes": 8987
     },
     "https://lastz.stresswar.com/feedback.data": {
@@ -303,7 +303,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "1c5d7ae77022802185fae216e03a20494798343d2aee606506aecab301ccb56c",
+      "sha256": "8ef0dc60d49a26f96f955b1ff591d3d556b0a49dfc30a1b00804a1d77ed753ef",
       "bytes": 28792
     },
     "https://lastz.stresswar.com/hq": {
@@ -311,7 +311,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "f0c4cc0266aad950983527b785f66732347c0a4a17ebc9ef92b2ce2b309edd52",
+      "sha256": "ffddfb44123124ca9b863ce2ec4ad5e9692e02760a04b888768217ced14e7bdc",
       "bytes": 21946
     },
     "https://lastz.stresswar.com/icons/alliance-recognition/augmented-engine.webp": {
@@ -935,7 +935,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "d943163f0a461f41fc855c9bb687a096fd8ca0db6ec790d83ef45bbe109e5739",
+      "sha256": "f65a5441d22a0659933a5d7f1c7fbe0488857da038716fe1304be2afeda81cd1",
       "bytes": 102339
     },
     "https://lastz.stresswar.com/research.data": {
@@ -951,7 +951,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "25df23872bea4776fc6eb391f60d2f94268954814d384eb6f29b4b975f3f1228",
+      "sha256": "f9acbf104f88cee573b969ec541ace7419b123de9e9dcf0a772f4ac6abfb8a76",
       "bytes": 91056
     },
     "https://lastz.stresswar.com/research/alliance-recognition.data": {
@@ -967,7 +967,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "c7d0d111605ff02ceef30ea374a24f8f3625609ff4d6ab5a5f9a302c2dccb50f",
+      "sha256": "e7d0c8f1e7642066042503c849174213da258a68586a8e5c35131cb624a00a9d",
       "bytes": 93240
     },
     "https://lastz.stresswar.com/research/army-building.data": {
@@ -983,7 +983,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "4ea5dc94e7c6d6e069dc480f7b5da6dec16227a980d20872479bb1253107fb60",
+      "sha256": "3814436d3a387b2b341a94daeb1711bfeca7e67a7865069f79d8cb12d78669d0",
       "bytes": 61022
     },
     "https://lastz.stresswar.com/research/field.data": {
@@ -999,7 +999,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "408e33b413d2999192af33844e54a11495c93de5732aaae4e7cc3a5679d5c054",
+      "sha256": "730fd5228ece3ac307420ed8a2d524e8873c35af436c4acff08197735e8a6bf4",
       "bytes": 91287
     },
     "https://lastz.stresswar.com/research/fully-armed-alliance.data": {
@@ -1015,7 +1015,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "485158990881c39f547716e5fde375defbde493c8fbf98f4fa99f38bf9bdf2f8",
+      "sha256": "d10c471336731a6d649134790b8d0886a0322a975f9138511a208d77b9f686ff",
       "bytes": 67929
     },
     "https://lastz.stresswar.com/research/hero-training.data": {
@@ -1031,7 +1031,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "185bab6cb2061f1f2112fc490d81f00b350f673e0a8f38b726c8435a38421e99",
+      "sha256": "ea6a7b2f4d92691a229a603c22b69e060cbfa06c34a7de6722dd4609b5ede09f",
       "bytes": 85482
     },
     "https://lastz.stresswar.com/research/military-strategies.data": {
@@ -1047,7 +1047,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "fc10adf05aa2154e5dbc8ad0994712c25375dfafd31e8d282d576c87c485a25d",
+      "sha256": "aa0f21b8a5ea45b9f0b7c97031eb39e554a93bce16aefdef7a6b11bd044710bc",
       "bytes": 79368
     },
     "https://lastz.stresswar.com/research/peace-shield.data": {
@@ -1063,7 +1063,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "3079142acfd4ff1e698fc29263f8ef970c028bedc988d2b4cf544c0b63b95341",
+      "sha256": "3253e7e48d9dbcadec6f287a854ef141fb41319a34aebb02a8f5719c2289a91c",
       "bytes": 85680
     },
     "https://lastz.stresswar.com/research/siege-to-seize.data": {
@@ -1079,7 +1079,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "2aa892f9967133505874719568b126bfec0145d6bb7a14f63fea24446a220c23",
+      "sha256": "5537ae7c01d76bfe17dffbd2df01ada92348fffdf0da4c7d2c0999e69df8b082",
       "bytes": 96286
     },
     "https://lastz.stresswar.com/research/unit-special-training.data": {
@@ -1103,7 +1103,7 @@
       "lastModified": null,
       "contentLength": null,
       "contentType": "text/html",
-      "sha256": "7b9765c937f3e34342c73e5d5a312b391931dd08c6ed11c328659e711fcad803",
+      "sha256": "b8f659b8ed98625ee1b64089a5a0e3623f9d83788699470989ba3423719deb5a",
       "bytes": 103160
     },
     "https://lastz.stresswar.com/tank.data": {

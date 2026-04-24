@@ -12,6 +12,7 @@ import { dirname, extname, join, normalize, relative, resolve, sep } from "node:
 const LIVE_ORIGIN = "https://lastz.stresswar.com";
 const root = resolve(process.cwd());
 const statePath = join(root, ".lastz-live-state.json");
+const managedStatePath = join(root, ".lastz-live-managed.json");
 const dryRun = process.argv.includes("--dry-run");
 
 const routePaths = new Set(["/", "/tank", "/research", "/heroes", "/calculators", "/feedback", "/hq"]);
@@ -28,6 +29,7 @@ const assetPaths = new Set([
 const dataPaths = new Set();
 
 const state = loadState();
+const managedState = loadManagedState();
 const visitedUrls = new Set();
 const summary = {
   checked: 0,
@@ -36,6 +38,7 @@ const summary = {
   written: 0,
   unchanged: 0,
   failed: 0,
+  preserved: 0,
 };
 
 discoverLocalRoutes();
@@ -63,6 +66,27 @@ function saveState() {
   };
   if (!dryRun) {
     writeFileIfChanged(statePath, `${JSON.stringify(out, null, 2)}\n`);
+  }
+}
+
+function loadManagedState() {
+  if (!existsSync(managedStatePath)) return { version: 1, files: {} };
+  try {
+    return JSON.parse(readFileSync(managedStatePath, "utf8"));
+  } catch {
+    return { version: 1, files: {} };
+  }
+}
+
+function saveManagedState() {
+  const out = {
+    version: 1,
+    files: Object.fromEntries(
+      Object.entries(managedState.files || {}).sort(([a], [b]) => a.localeCompare(b)),
+    ),
+  };
+  if (!dryRun) {
+    writeFileIfChanged(managedStatePath, `${JSON.stringify(out, null, 2)}\n`);
   }
 }
 
@@ -117,6 +141,7 @@ async function sync() {
 
   ensureRootDataAlias();
   saveState();
+  saveManagedState();
   printSummary();
 
   if (summary.failed > 0) {
@@ -172,9 +197,13 @@ async function syncOne(item) {
     for (const target of targets) {
       const targetFile = join(root, target);
       const output = item.kind === "route" ? normalizeHtml(bytes.toString("utf8"), item.path, targetFile) : bytes;
-      if (writeFileIfChanged(targetFile, output)) {
+      const writeResult = syncManagedFile(targetFile, output, url);
+      if (writeResult === "written") {
         summary.written += 1;
         console.log(`${dryRun ? "would write" : "wrote"} ${target}`);
+      } else if (writeResult === "preserved") {
+        summary.preserved += 1;
+        console.log(`${dryRun ? "would preserve" : "preserved"} ${target}`);
       } else {
         summary.unchanged += 1;
       }
@@ -257,13 +286,70 @@ function writeFileIfChanged(file, content) {
   return true;
 }
 
+function syncManagedFile(file, content, sourceUrl) {
+  const bytes = Buffer.isBuffer(content) ? content : Buffer.from(content);
+  const rel = relative(root, file).split(sep).join("/");
+  const remoteHash = createHash("sha256").update(bytes).digest("hex");
+  const entry = managedState.files?.[rel];
+
+  if (!existsSync(file)) {
+    if (!dryRun) {
+      mkdirSync(dirname(file), { recursive: true });
+      writeFileSync(file, bytes);
+    }
+    rememberManagedFile(rel, remoteHash, remoteHash, sourceUrl);
+    return "written";
+  }
+
+  const existing = readFileSync(file);
+  const existingHash = createHash("sha256").update(existing).digest("hex");
+
+  if (existingHash === remoteHash) {
+    rememberManagedFile(rel, remoteHash, remoteHash, sourceUrl);
+    return "unchanged";
+  }
+
+  if (!entry) {
+    rememberManagedFile(rel, existingHash, remoteHash, sourceUrl);
+    return "preserved";
+  }
+
+  if (existingHash !== entry.localSha256) {
+    return "preserved";
+  }
+
+  if (entry.localSha256 !== entry.remoteSha256) {
+    return "preserved";
+  }
+
+  if (!dryRun) {
+    mkdirSync(dirname(file), { recursive: true });
+    writeFileSync(file, bytes);
+  }
+  rememberManagedFile(rel, remoteHash, remoteHash, sourceUrl);
+  return "written";
+}
+
+function rememberManagedFile(rel, localSha256, remoteSha256, sourceUrl) {
+  managedState.files ||= {};
+  managedState.files[rel] = {
+    localSha256,
+    remoteSha256,
+    sourceUrl,
+  };
+}
+
 function ensureRootDataAlias() {
   const homeData = join(root, ".data");
   if (!existsSync(homeData)) return;
 
-  if (writeFileIfChanged(join(root, "_root.data"), readFileSync(homeData))) {
+  const writeResult = syncManagedFile(join(root, "_root.data"), readFileSync(homeData), `${LIVE_ORIGIN}/.data`);
+  if (writeResult === "written") {
     summary.written += 1;
     console.log(`${dryRun ? "would write" : "wrote"} _root.data`);
+  } else if (writeResult === "preserved") {
+    summary.preserved += 1;
+    console.log(`${dryRun ? "would preserve" : "preserved"} _root.data`);
   } else {
     summary.unchanged += 1;
   }
@@ -362,6 +448,6 @@ function looksTextual(path) {
 function printSummary() {
   const mode = dryRun ? "dry run" : "sync";
   console.log(
-    `${mode}: checked ${summary.checked}, skipped ${summary.skipped}, downloaded ${summary.downloaded}, written ${summary.written}, unchanged ${summary.unchanged}, failed ${summary.failed}`,
+    `${mode}: checked ${summary.checked}, skipped ${summary.skipped}, downloaded ${summary.downloaded}, written ${summary.written}, preserved ${summary.preserved}, unchanged ${summary.unchanged}, failed ${summary.failed}`,
   );
 }
