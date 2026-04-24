@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Last Z Email Formatter</title>
+  <meta name="description" content="Format Last Z alliance emails with Unity Rich Text tags.">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mail-screen">
+    <header class="mail-top">
+      <h1>Mail</h1>
+    </header>
+
+    <main class="mail-panel">
+      <section class="mail-banner">
+        <div class="sender-block">
+          <p class="sender-name">[NVQ]skullyxcii</p>
+          <p class="sender-type">(Alliance Mail) ignore this</p>
+          <p class="mail-date">2026-04-24 10:51:32</p>
+        </div>
+      </section>
+
+      <section class="composer-frame" aria-label="Email formatter">
+        <div class="mail-title" aria-hidden="true">
+          <span></span>
+          <strong>Text</strong>
+          <span></span>
+        </div>
+
+        <div class="mail-body">
+          <div
+            id="composer"
+            class="composer"
+            contenteditable="true"
+            spellcheck="false"
+            role="textbox"
+            aria-multiline="true"
+            data-placeholder="Type your alliance email here..."
+          ></div>
+
+          <div class="tool-dock" aria-label="Formatting tools">
+            <button class="tool-btn heading-tool" data-size="60" type="button" title="Make selected text H1 size 60">H1</button>
+            <button class="tool-btn heading-tool" data-size="50" type="button" title="Make selected text H2 size 50">H2</button>
+            <button class="tool-btn heading-tool" data-size="40" type="button" title="Make selected text H3 size 40">H3</button>
+            <button class="tool-btn color-tool" id="colorBtn" type="button" title="Color selected text">
+              <span class="color-dot" aria-hidden="true"></span>
+              <span class="sr-only">Color</span>
+            </button>
+            <button class="tool-btn strong" id="boldBtn" type="button" title="Bold selected text">B</button>
+            <button class="tool-btn underline" id="underlineBtn" type="button" title="Underline selected text">U</button>
+          </div>
+
+          <div class="color-popover" id="colorPopover" hidden>
+            <div class="preset-colors" id="presetColors"></div>
+            <label class="color-wheel">
+              <span>Custom</span>
+              <input id="customColor" type="color" value="#FFD700">
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <p class="hint" id="hint">Select text, then tap a format button.</p>
+
+      <details class="help">
+        <summary>Supported tags</summary>
+        <div class="examples">
+          <code>&lt;b&gt;Bold text&lt;/b&gt;</code>
+          <code>&lt;u&gt;Underlined text&lt;/u&gt;</code>
+          <code>&lt;size=50&gt;Large text&lt;/size&gt;</code>
+          <code>&lt;color=#FFD700&gt;Gold text&lt;/color&gt;</code>
+        </div>
+      </details>
+    </main>
+
+    <footer class="action-bar">
+      <a class="nav-action" href="/" aria-label="Back to home">
+        <span class="nav-icon">‹</span>
+        <span>Back</span>
+      </a>
+      <button class="nav-action" id="clearBtn" type="button">
+        <span class="nav-icon">⌫</span>
+        <span>Clear</span>
+      </button>
+      <button class="nav-action primary-action" id="generateBtn" type="button">
+        <span class="nav-icon">★</span>
+        <span>Generate</span>
+      </button>
+      <button class="nav-action" id="copyBtn" type="button" hidden>
+        <span class="nav-icon">⧉</span>
+        <span>Copy</span>
+      </button>
+      <button class="nav-action" id="editBtn" type="button" hidden>
+        <span class="nav-icon">✎</span>
+        <span>Edit</span>
+      </button>
+    </footer>
+
+    <div class="status-row">
+      <span class="heart" aria-hidden="true">♥</span>
+      <span>0</span>
+      <p class="status" id="statusMessage" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
